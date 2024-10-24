@@ -42,6 +42,7 @@ workflowDefinition:
         externalId: icapi_ts_assets_contextualization
         concurrencyPolicy: waitForCurrent
     dependsOn: 
+      - externalId: icapi_timeseries_extractor
       - externalId: create_asset_hierarchy
     retries: 3
     timeout: 3600
